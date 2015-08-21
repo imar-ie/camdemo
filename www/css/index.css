@@ -1,0 +1,84 @@
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+@-ms-viewport {
+	width: device-width;
+	height: device-height;
+}
+html
+{
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    height:100%;
+}
+
+body
+{ 
+	font-family: sans-serif, Arial, Segoe UI;
+	font-size: 16px;
+	margin: 5px;
+	padding: 0;
+    height:100%;
+    padding: 40px 10px;
+   text-align:center;
+}
+
+.content{
+}
+
+#previewImage{
+	margin:5px auto;
+	width:80%; 
+}
+
+/* hide the holder for the tmp file path */
+#tmpFile{
+	display:none;
+}
+
+/*button*/
+.button
+{
+	border: 1px solid #8d9096;
+    border-radius: 3px;
+    color: #4d5d6b;
+    background: transparent;
+    margin-left:12px;
+    margin-top:12px;
+    width: 140px;
+    height: 32px;
+    display: inline;
+    float: left;
+}
+     
+.button:active
+{
+	border: 1px solid #639ecd;
+	background-image: none;
+	background-color: #639ecd;
+    color: #fff;
+    box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.3);
+}
+
+.button:disabled,
+.button:disabled:hover,
+.button:disabled:active
+{
+	background: rgba(49, 52, 55, 0.1);
+	color: rgba(255, 255, 255, 0.5); 
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.button.dh {
+    height:60px;   
+}
+.button.dw {
+    width:220px;   
+} 
+
+/* landscape */
+@media screen and (orientation:landscape) {
+	.button.dh {
+        height:32px;
+        width:220px; 
+    }
+}
