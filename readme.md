@@ -7,3 +7,4 @@ This requires the following plugins:
 * cordova-plugin-camera
 * cordova-plugin-device
 * cordova-plugin-file
+* cordova-plugin-console
